@@ -4,9 +4,7 @@ def dayOnePartOneAndTwo():
     horizontalPosition = 0
     depth = 0
     inputValues = []
-    answer = 0
     aim = 0
-    answerPartTwo = 0
 
     f = open("data.txt", "r")
     lines = f.readlines()
@@ -27,7 +25,7 @@ def dayOnePartOneAndTwo():
         
         i+=1
 
-    answear = depth * horizontalPosition
+    answer = depth * horizontalPosition
 
     ### Part two #####
     horizontalPosition = 0
@@ -50,9 +48,9 @@ def dayOnePartOneAndTwo():
         
         i+=1
 
-    ansanswerPartTwo = horizontalPosition * depth
+    answerPartTwo = horizontalPosition * depth
     
-    return ("Answer part one: " + str(answear) + "\n" + "Answer part two: " + str(ansanswerPartTwo))
+    return ("Answer part one: " + str(answer) + "\n" + "Answer part two: " + str(answerPartTwo))
 
 
 def main():
